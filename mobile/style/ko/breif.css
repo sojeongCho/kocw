@@ -1,0 +1,34 @@
+/* .menuW{width: 100%; height: 100%; overflow: hidden;} */
+.menuType1W{margin: 8px 0; padding: 0 20px; box-sizing: border-box;}
+.menuType1 > li{width: 52px; height: 72px; background-color: #e2e2fb; border-radius: 8px; margin-right: 8px; border: 1px solid transparent}
+.menuType1 > li > a{display: block; width: 100%; height: 100%; text-align: center;}
+.menuType1 > li > a > .title{font-family: PretendardM, sans-serif; font-size: 13px; width: 100%; height: 44px; padding: 8px 8px 0; box-sizing: border-box; letter-spacing: -0.025em; line-height: 1.1; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; word-break: keep-all;}
+.menuType1 > li > a > .count{display: block; font-size: 12px; color: #a0a0a0; font-family: PretendardL, sans-serif;}
+.menuType1 > li.on{border: 1px solid #6435d9;}
+.menuType1 > li.on > a > .title{color: #6435d9;}
+
+.menuType1W{position: relative;}
+.menuType1W .menuType2W{position: absolute; width: 100%; left: 0; top: 100%;}
+.menuType2W{padding: 0 20px; box-sizing: border-box;}
+.menuType2W .menuType2{display: none;}
+.menuType2W .menuType2.on{display: block;}
+.menuType2W .menuType2 > li > a{display: block; width: 100%; height: 100%; font-family: PretendardM, sans-serif; font-size: 14px; padding: 8px 16px; border-top: 1px solid #e5e5e5; border-radius: 4px; box-sizing: border-box;}
+.menuType2W .menuType2 > li:last-child > a{border-bottom: 1px solid #e5e5e5;}
+.menuType2W .menuType2 > li > a > .count{color: #a0a0a0; font-family: PretendardL, sans-serif;}
+.menuType2W .menuType2 > li.on > a{border: 1px solid #6435d9;}
+.menuType2W .menuType2 > li.on > a > .count{color: #333333;}
+
+.menuType2W .menuType3W{display: none;}
+.menuType2W .menuType2  li.on  .menuType3W{display: block;}
+.menuType2W .menuType3W {height: auto; padding: 12px 8px 4px; box-sizing: border-box; border-radius: 4px; background-color: #f5f5f5;}
+.menuType2W .menuType3W .menuType3{-webkit-box-lines: multiple; -ms-flex-wrap: wrap; flex-wrap: wrap;}
+.menuType2W .menuType3W .menuType3 li{margin-bottom: 12px;}
+.menuType2W .menuType3W .menuType3 li a{display: -webkit-box; display: -ms-flexbox; display: flex; font-size: 13px; letter-spacing: -0.025em; line-height: 1;}
+.menuType2W .menuType3W .menuType3 li a .title{display: inline-block; font-family: PretendardM, sans-serif; max-width: calc(100% - 36px); margin-right: 4px; line-height: 1.1; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.menuType2W .menuType3W .menuType3 li a .count{color: #a0a0a0; font-family: PretendardL, sans-serif;}
+.menuType2W .menuType3W .menuType3 li.on a{color: #6435d9;}
+.menuType2W .menuType3W .menuType3 li.on a .count{color: #6435d9;}
+.menuType2W .menuType3W .slick-dots{display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 8px 0;}
+.menuType2W .menuType3W .slick-dots li{margin: 0 4px;}
+.menuType2W .menuType3W .slick-dots .dot{display: block; background-color: #a0a0a0; border-radius: 50%; width: 8px; height: 8px; border: none; cursor: pointer;}
+.menuType2W .menuType3W .slick-dots li.slick-active .dot{background-color: #6435d9;}
