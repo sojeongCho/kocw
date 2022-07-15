@@ -115,11 +115,9 @@ html.hidden, body.hidden {overflow: hidden; position: fixed; left: 0; top: 0; ri
 #divSearch .center{padding: 0 20px; box-sizing: border-box;}
 /* searchBox */
 #divSearch .searchBox{width: 100%; position: relative; margin-bottom: 12px;}
-#divSearch .searchBox input[type=text]{width: 100%; box-sizing: border-box; border: 0; border-radius: 4px; line-height: 60px; padding: 0 55px 0 16px; background:#6435d9; color: #fff; font-weight: normal; font-family: Pretendard, sans-serif; font-size: 1.06rem;}
-#divSearch .searchBox input[type=text]:focus{padding: 0 80px 0 16px;}
+#divSearch .searchBox input[type=text]{width: 100%; box-sizing: border-box; border: 0; border-radius: 4px; line-height: 60px; padding: 0 80px 0 16px; background:#6435d9; color: #fff; font-weight: normal; font-family: Pretendard, sans-serif; font-size: 1.06rem;}
 #divSearch .searchBox input[type=text]::placeholder{color: #fff; font-weight: normal; font-family: Pretendard, sans-serif;  font-size: 1.06rem;}
-#divSearch .searchBox input[type=reset]{position: absolute; right: 50px; top: 50%; transform: translateY(-50%); border: none; background: url(../../../image/reset.png) no-repeat center center; width: 18px; height: 18px; padding: 0; border-radius: 50%; box-sizing: border-box; background-size: cover; cursor: pointer; image-rendering: -webkit-optimize-contrast; display: none;}
-#divSearch .searchBox input[type=text]:focus + input[type=reset]{display: block;}
+#divSearch .searchBox input[type=reset]{position: absolute; right: 50px; top: 50%; transform: translateY(-50%); border: none; background: url(../../../image/reset.png) no-repeat center center; width: 18px; height: 18px; padding: 0; border-radius: 50%; box-sizing: border-box; background-size: cover; cursor: pointer; image-rendering: -webkit-optimize-contrast;}
 #divSearch .searchBox .submitBtn{position: absolute; right: 12px; top: 50%; transform: translateY(-50%); width: 28px;}
 #divSearch .searchBox .submitBtn img{width: 100%;}
 /* searchSection */
@@ -186,8 +184,7 @@ html.hidden, body.hidden {overflow: hidden; position: fixed; left: 0; top: 0; ri
 #divSearch .closeBtn img{width: 24px;}
 @media screen and (max-width:640px){
     #divSearch .center{padding: 0 16px;}
-    #divSearch .searchBox input[type=text]{line-height: 56px; padding: 0 48px 0 12px;}
-    #divSearch .searchBox input[type=text]:focus{padding: 0 70px 0 12px;}
+    #divSearch .searchBox input[type=text]{line-height: 56px; padding: 0 70px 0 12px;}
     #divSearch .searchBox input[type=reset]{right: 44px; width: 16px; height: 16px;}
     #divSearch .searchBox .submitBtn{position: absolute; right: 12px; top: 50%; transform: translateY(-50%); width: 25px;}
     #divSearch .closeBtn img{width: 20px;}
