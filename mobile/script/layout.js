@@ -1,4 +1,12 @@
 $(document).ready(function(){
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+    
+    window.addEventListener("resize", () => {
+      console.log("resize");
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+    });
     // 영역외 클릭
     $('html').on("click",function(e){
         // 검색어 관련 닫기
@@ -47,6 +55,10 @@ $(document).ready(function(){
     // 전체메뉴 열기
     $(".wholeMenuBtn, .botWholeMenu").on("click",function(){
         $("#divWholeMenu").show();
+        $("header .headerBg").show();
+        setTimeout(function(){
+            $("#divWholeMenu").animate({"left": "0"},1000,'easeOutQuint');
+        },100);
         $("body, html").addClass("hidden");
     }); 
     // depth1 클릭시 depth2 보이기   
@@ -55,7 +67,10 @@ $(document).ready(function(){
     });
     // 전체메뉴 닫기
     $("#divWholeMenu .wholeMenuClose").on("click",function(){
-        $("#divWholeMenu").hide();
+        $("#divWholeMenu").animate({"left": "-100%"},500,'easeOutQuint',function(){
+            $("#divWholeMenu").hide();
+            $("header .headerBg").fadeOut(400);
+        });
         $("body, html").removeClass("hidden");
     });
 
@@ -63,20 +78,29 @@ $(document).ready(function(){
     // 검색창 보이기
     // 검색창 버튼 클릭시 검색세부창으로 넘어감
     $(".headerSearch .searchBtn").on("click", function(){
+        setTimeout(function(){
+            $("#divSearch").animate({"top": "48px"},1000,'easeOutQuint');
+        },100);
         $("#divSearch").show();
+        $("header .headerBg").show();
         $("body, html").addClass("hidden");
-        return false
+        console.log("a");
+        return false;
     });
     // input focus 잡혀있을때 스크롤시 focus 해제
-    $("#divSearch").scroll(function(e){
+    $("#divSearch .scrollW").scroll(function(e){
         $("#divSearch input[type=text]").blur();
     });
     // 검색창 닫기
-    $("#divSearch .closeBtn").on("click", function(){
-        $("#divSearch").hide();
+    $("#divSearch .closeBtn, header .headerBg").on("click", function(){
+        $("#divSearch").animate({"top": "100%"},500,'easeOutQuint',function(){
+            $("#divSearch").hide();
+        });
+        $("header .headerBg").fadeOut(400);
         $("body, html").removeClass("hidden");
-        $("#divWrapper").removeClass("hideHeader");
-        return false
+        $("#divWrapper").removeClass("hideHeader");        
+
+        return false;
     });
     
     // 상세검색 보이기
@@ -86,21 +110,29 @@ $(document).ready(function(){
         }else{
             $(this).parents(".searchSection.detail").addClass("open")
         }
+
+        return false;
     });
     // customSelect
     $(".customSelectBox .customSelect label").on("click",function(){
         if($(this).parents(".customSelectBox").hasClass("on")){
+            $(".customSelectOpt").hide();
             $(".customSelectBox").removeClass("on");
         }else{
             $(".customSelectBox").removeClass("on");
             $(this).parents(".customSelectBox").addClass("on");
+            $(".customSelectOpt").hide();
+            $(this).parents(".customSelectBox").find(".customSelectOpt").slideDown(300);
         }
+
+        return false;
     });
     // 영역외 클릭
     $('html').on("click",function(e){
         // customSelectOpt 닫기
     	if(!$(e.target).parents('.customSelectBox').length){
             $(".customSelectBox").removeClass("on");
+            $(".customSelectOpt").hide();
         }
     });
     // custmSelect 옵션 선택 관련
@@ -149,7 +181,7 @@ $(document).ready(function(){
 
     // goTopBtn
     $(".goTopBtn").on("click",function(){
-        $("html, body").animate({ scrollTop: 0}, 800); 
+        $("html, body").animate({ scrollTop: 0}, 500); 
 
         return false;
     });

@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta name="format-detection" content="telephone=no" />
     <title>KOCW</title>
-    <link rel="stylesheet" href="style/ko/basic/reset.css">
-    <link rel="stylesheet" href="style/ko/basic/common.css">
+    <link rel="stylesheet" href="style/css/common/reset.css">
+    <link rel="stylesheet" href="style/css/common/common.css">
     <link rel="stylesheet" href="style/ui/slick.css">
     <link rel="stylesheet" href="style/ui/swiper-bundle.css">
-    <link rel="stylesheet" href="style/ko/theme/layout.css">
-    <link rel="stylesheet" href="style/ko/breif.css">
+    <link rel="stylesheet" href="style/css/theme/layout.css">
+    <link rel="stylesheet" href="style/css/theme/sub.css">
 
     <script src="script/jquery-3.5.1.min.js"></script>
+    <script src="script/jquery.easing.min.js"></script>
     <script src="script/slick.js"></script>
     <script src="script/swiper-bundle.js"></script>
+    <script src="script/jquery.dotdotdot.js"></script>
     <script src="script/layout.js"></script>
     <!-- <script src="script/sub.js"></script> -->
 </head>
@@ -31,11 +33,11 @@
                                 <span></span>
                                 <span></span>
                             </a>
-                            <h1 class="logo"><a href="#" title=""><img src="image/logo.png"></a></h1>
+                            <h1 class="logo"><a href="#" title=""><img src="image/layout/logo.png"></a></h1>
                         </div>
                         <div class="right">
                             <!-- 로그아웃 버튼 -->
-                            <a class="myMenuBtn" href="#" title=""><img src="image/logout.png"></a>
+                            <a class="myMenuBtn" href="#" title=""><img src="image/layout/logout.png"></a>
                             <!-- 로그인 버튼 -->
                             <!-- <a class="loginBtn" href="#" title=""><img src="image/login.png"></a> -->
                         </div>
@@ -70,12 +72,13 @@
             <div id="divSearch">
                 <div class="searchBoxW">
                     <div class="center">
+                        <a class="closeBtn" href="#" title="닫기"><img src="image/arrow/left1.png"></a>  
                         <form>
                             <fieldset>
                                 <div class="searchBox">
                                     <input type="text" placeholder="강의명이나 교수명을 검색해보세요">
                                     <input type="reset" value="">
-                                    <a class="submitBtn" href="#" title="검색"><img src="image/search.png"></a>
+                                    <a class="submitBtn" href="#" title="검색"><img src="image/icon/search.png"></a>
                                 </div>
                             </fieldset>
                         </form>
@@ -219,12 +222,12 @@
                                     </ul>
                                 </div>
                                 <ul class="recentList">
-                                    <li><a class="title" href="#" title="대학교육">대학교육</a><a class="delete" href="#" title="삭제"><img src="image/delete.png"></a></li>
-                                    <li><a class="title" href="#" title="AI">AI</a><a class="delete" href="#" title="삭제"><img src="image/delete.png"></a></li>
-                                    <li><a class="title" href="#" title="영어회화">영어회화</a><a class="delete" href="#" title="삭제"><img src="image/delete.png"></a></li>
-                                    <li><a class="title" href="#" title="미래사회">미래사회</a><a class="delete" href="#" title="삭제"><img src="image/delete.png"></a></li>
-                                    <li><a class="title" href="#" title="메타버스">메타버스</a><a class="delete" href="#" title="삭제"><img src="image/delete.png"></a></li>
-                                    <li><a class="title" href="#" title="연구">연구</a><a class="delete" href="#" title="삭제"><img src="image/delete.png"></a></li>
+                                    <li><a class="title" href="#" title="대학교육">대학교육</a><a class="delete" href="#" title="삭제"><img src="image/icon/delete.png"></a></li>
+                                    <li><a class="title" href="#" title="AI">AI</a><a class="delete" href="#" title="삭제"><img src="image/icon/delete.png"></a></li>
+                                    <li><a class="title" href="#" title="영어회화">영어회화</a><a class="delete" href="#" title="삭제"><img src="image/icon/delete.png"></a></li>
+                                    <li><a class="title" href="#" title="미래사회">미래사회</a><a class="delete" href="#" title="삭제"><img src="image/icon/delete.png"></a></li>
+                                    <li><a class="title" href="#" title="메타버스">메타버스</a><a class="delete" href="#" title="삭제"><img src="image/icon/delete.png"></a></li>
+                                    <li><a class="title" href="#" title="연구">연구</a><a class="delete" href="#" title="삭제"><img src="image/icon/delete.png"></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -250,7 +253,6 @@
                         </div>
                     </div>
                 </div>
-                <a class="closeBtn" href="#" title="닫기"><img src="image/close.png"></a>  
             </div>
             <div id="divWholeMenu">
                 <div class="wholeMenuTop">
@@ -315,7 +317,7 @@
                         <li><a href="#" title="대학담당자">대학담당자</a></li>
                     </ul>
                 </div>
-                <a class="wholeMenuClose" href="#" title="전체메뉴 닫기"><img src="image/close.png"></a>
+                <a class="wholeMenuClose" href="#" title="전체메뉴 닫기"><img src="image/icon/close.png"></a>
             </div>
             <div class="headerBg"></div>
         </header>
@@ -324,61 +326,63 @@
                 
             </div>
         </div>
-        <footer id="divFooter">
-            <div class="center">
-                <div class="footerSection">
-                    <div class="footerInfo">
-                        <div class="call">
-                            <p>KOCW 고객센터</p>
-                            <p class="number">1599-3122</p>
+        <footer>
+            <div id="divFooter">
+                <div class="center">
+                    <div class="footerSection">
+                        <div class="footerInfo">
+                            <div class="call">
+                                <p>KOCW 고객센터</p>
+                                <p class="number">1599-3122</p>
+                            </div>
+                            <div class="openHour">
+                                <ul>
+                                    <li><span class="day">평일</span><span class="time">오전 09:00 ~ 오후 18:00</span></li>
+                                    <li><span class="day">주말,공휴일</span><span class="time">휴무</span></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="openHour">
-                            <ul>
-                                <li><span class="day">평일</span><span class="time">오전 09:00 ~ 오후 18:00</span></li>
-                                <li><span class="day">주말,공휴일</span><span class="time">휴무</span></li>
+                        <div class="linkMenuW">
+                            <ul class="site">
+                                <li><a href="#" title="KERIS"><img src="image/layout/footerLogo1.png"></a></li>
+                                <li><a href="#" title="교육부"><img src="image/layout/footerLogo2.png"></a></li>
+                            </ul>
+                            <ul class="sns">
+                                <li><a href="#" title="facebook"><img src="image/layout/facebook.png"></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="linkMenuW">
-                        <ul class="site">
-                            <li><a href="#" title="KERIS"><img src="image/footerLogo1.png"></a></li>
-                            <li><a href="#" title="교육부"><img src="image/footerLogo2.png"></a></li>
+                    <div class="footerSection">
+                        <ul class="footerMenu">
+                            <li class="color"><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+                            <li><a href="#" title="이메일부단수집거부">이메일부단수집거부</a></li>
+                            <li><a href="#" title="이용문의">이용문의</a></li>
                         </ul>
-                        <ul class="sns">
-                            <li><a href="#" title="facebook"><img src="image/facebook.png"></a></li>
-                        </ul>
+                        <p class="address">41061 대구광역시 동구 동내로 64 (동내동 1119)</p>
+                        <p class="copyright">COPYRIGHT KERIS. ALLRIGHTS RESERVED</p>
+                    
                     </div>
-                </div>
-                <div class="footerSection">
-                    <ul class="footerMenu">
-                        <li class="color"><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
-                        <li><a href="#" title="이메일부단수집거부">이메일부단수집거부</a></li>
-                        <li><a href="#" title="이용문의">이용문의</a></li>
-                    </ul>
-                    <p class="address">41061 대구광역시 동구 동내로 64 (동내동 1119)</p>
-                    <p class="copyright">COPYRIGHT KERIS. ALLRIGHTS RESERVED</p>
-                   
                 </div>
             </div>
         </footer>
         <div class="bottomMenuBar">
-            <a class="goTopBtn" href="#" title="상단으로 이동"><img src="image/goTop.png"></a>
+            <a class="goTopBtn" href="#" title="상단으로 이동"><img src="image/layout/goTop.png"></a>
             <ul>
                 <li class="botWholeMenu">
                     <a href="#" title="">
-                        <img src="image/wholeMenu.png">
+                        <img src="image/layout/wholeMenu.png">
                         <span>전체메뉴</span>
                     </a>
                 </li>
                 <li class="home">
                     <a href="#" title="">
-                        <img src="image/home.png">
+                        <img src="image/layout/home.png">
                         <span>홈</span>
                     </a>
                 </li>
                 <li class="myLecture">
                     <a href="#" title="">
-                        <img src="image/myMenu.png">
+                        <img src="image/layout/myMenu.png">
                         <span>내강의실</span>
                     </a>
                 </li>

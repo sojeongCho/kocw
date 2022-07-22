@@ -1,0 +1,10 @@
+
+#divWrapper.fixed #divContentsW{padding-top: 170px;}
+@media screen and (max-width:640px){
+    #divWrapper.fixed #divContentsW{padding-top: 164px;}
+}
+
+#divContents{padding: 24px 20px; overflow: hidden;}
+@media screen and (max-width:640px){
+    #divContents{padding: 24px 16px;}
+}

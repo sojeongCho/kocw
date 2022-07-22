@@ -3,10 +3,8 @@ $(document).ready(function(){
     $(".visualW").addClass("effect");
     // 검색창 버튼 클릭시 검색세부창으로 넘어감
     $(".searchW .searchBtn").on("click", function(){
-        $("#divSearch").show();
-        $("#divSearch .searchBox input[type=text]").focus();
-
-        return false
+        $(".headerSearch .searchBtn").click();
+        return false;
     });
  
     let videoListSwiperOp = {

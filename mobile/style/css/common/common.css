@@ -1,0 +1,51 @@
+/* color */
+.color1{color: #9433ff!important;}
+.color2{color: #1375d1!important;}
+.color3{color: #006e46!important;}
+.color4{color: #cb5500!important;}
+
+/* Btn */
+.downloadBtn{display: inline-block; border: 1px solid #c5c5c5; border-radius: 4px; padding: 6px 32px 6px 12px; color: #474747; font-family: PretendardM, sans-serif; font-size: 1rem; background: url(../../../image/icon/icon_download.png) no-repeat right 12px center; background-size: 14px auto; image-rendering: -webkit-optimize-contrast;}
+.urlBtn{display: inline-block; border: 1px solid #c5c5c5; border-radius: 4px; padding: 6px 32px 6px 12px; color: #474747; font-family: PretendardM, sans-serif; font-size: 1rem; background: url(../../../image/icon/icon_url.png) no-repeat right 12px center; background-size: 12px auto; image-rendering: -webkit-optimize-contrast;}
+.clipBtn{display: inline-block; border: 1px solid #7c75ff; border-radius: 4px; color: #736bff; font-size: 1rem; position: relative;}
+.clipBtn .btn{display: block; padding: 8px 9px 5px;}
+.clipBtn img{width: 16px;}
+.clipBtn .addtext{position: absolute; right: 2px; top: -12px; transform: translateY(-100%); font-family: PretendardL, sans-serif; font-size: 0.87rem; color: #ffffff; padding: 8px 12px; background-color: #736bff; border-radius: 8px; white-space: nowrap;}
+.clipBtn .addtext::after{content: ""; display: block; width: 0px; height: 0px; position: absolute; right: 0; bottom: -6px; border-top:8px solid transparent; border-bottom:8px solid transparent; border-right: 8px solid #736bff; border-left: 8px solid  none;}
+.clipBtn .addtext .close img{width: 12px; margin-left: 2px; vertical-align: bottom;}
+@media screen and (max-width:640px){
+    .downloadBtn{padding: 6px 28px 6px 8px; background-position: right 8px center;}
+    .urlBtn{padding: 6px 28px 6px 8px; background-position: right 8px center;}
+    .clipBtn .btn{padding: 6px 7px 4px;}
+}
+
+
+/* service */
+.flash{display: inline-block; min-width: 52px; border: 1px solid #dc3336; border-radius: 2px; color: #d30004; font-size: 0.75rem; line-height: 20px; text-align: center;}
+.activeX{display: inline-block; min-width: 52px; border: 1px solid #8f89ff; border-radius: 2px; color: #736bff; font-size: 0.75rem; line-height: 20px; text-align: center;}
+@media screen and (max-width:640px){
+    .flash{min-width: 44px; line-height: 18px;}
+    .activeX{min-width: 44px; line-height: 18px;}
+}
+
+
+/* VideoList */
+.VideoList .videoCover{display: block; width: 200px;  height: 120px; border-radius: 8px; overflow: hidden; position: relative; box-sizing: border-box; border: 1px solid #ddd; flex-shrink: 0;}
+.VideoList .videoCover::after{content: ""; display: block; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.15); position: absolute; left: 0; top: 0;}
+.VideoList .videoCover img{width: 100%; height: 100%;}
+.VideoList .videoCover .playTime{position: absolute; height: 16px; line-height: 16px; right: 8px; top: 8px; color: #ffffff; font-size: 0.87rem; padding-left: 20px; background: url(../../../image/icon/vod_timeIcon.png) no-repeat left center; background-size: 16px; z-index: 1;}
+.VideoList .videoCover .playBtn{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 32px; height: 32px; z-index: 1;}
+.VideoList .videoCover .playBtn img{width: 100%; height: 100%;}
+.VideoList .major{display: block; font-size: 1rem; margin-bottom: 8px; font-family: PretendardM, sans-serif;}
+.VideoList .title{display: block; font-size: 1.18rem; font-family: PretendardM, sans-serif; color: #000000; margin-bottom: 7px; width: 100%; line-height: 1.2em; word-break: keep-all; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.VideoList .lecturer{display: block; font-size: 1.06rem; color: #626262; font-family: PretendardL, sans-serif;}
+.VideoList .lecturer span{display: inline-block;  position: relative; padding-right: 0.5em; margin-right: 0.5em; white-space: nowrap; overflow:hidden; text-overflow: ellipsis; line-height: 1.1em;}
+.VideoList .lecturer span::after{content: ""; display: block; width: 1px; height: 0.8em; background-color: #b7b7b7; position: absolute; right: 0px; top: 3px;}
+.VideoList .lecturer span:last-child{padding-right: 0; margin-right: 0;}
+.VideoList .lecturer span:last-child::after{display: none;}
+.VideoList .lecturer .university{max-width: calc(100% - 55px);}
+
+@media screen and (max-width:640px){
+    .VideoList .videoCover{height: 100px;}
+    .VideoList .lecturer span{padding-right: 0.4em; margin-right: 0.4em;}
+}
