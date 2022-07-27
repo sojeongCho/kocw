@@ -77,7 +77,7 @@
 .menuType2 .depth3W .slick-dots .dot{display: block; background-color: #c5d0dc; border-radius: 50%; width: 10px; height: 10px; border: none; cursor: pointer;}
 .menuType2 .depth3W .slick-dots li.slick-active .dot{background-color: #2d2d2d;}
 #divWrapper.hideHeader .menuType2 .sidenav{top: 120px; max-height: calc(100vh - 220px);}
-.menuType2 .sidenav{position: fixed; right: 8px; top: 235px; background-color: #f0f0f0; padding: 16px 0; border-radius: 12px; z-index: 1; max-height: calc(100vh - 400px); transition: all 0.5s; overflow: auto;}
+.menuType2 .sidenav{position: fixed; right: 8px; top: 235px; background-color: #f0f0f0; padding: 16px 0; border-radius: 12px; z-index: 1; max-height: calc(100vh - 440px); transition: all 0.5s; overflow: auto;}
 .menuType2 .sidenav ul{display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;}
 .menuType2 .sidenav ul li{text-align: center;}
 .menuType2 .sidenav ul li a{display: inline-block; font-size: 0.8rem; color: #7a7878; padding: 6px 8px; font-weight: 600;}
