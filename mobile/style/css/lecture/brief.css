@@ -1,0 +1,68 @@
+/* searchResultW */
+/* .searchResultW{overflow: hidden;} */
+
+/* searchResultSection */
+.searchResultSection{padding: 36px 0;}
+.searchResultSection.borderT{border-top: 1px solid #dbdbdb;}
+.searchResultSection .searchTitle{font-family: PretendardM, sans-serif; font-size: 1.5rem; color: #000000; margin-bottom: 20px;}
+.searchResultSection .searchSumW{margin-bottom: 16px;}
+.searchResultSection .searchSumW .searchSum{color: #696868; font-size: 1rem; line-height: 1.2em; word-break: keep-all;}
+.searchResultSection .searchSumW .searchSum .searchWord{color: #000000; font-size: 1.06rem;}
+.searchResultSection .searchSumW .searchSum .searchCount{color: #f15b19; font-size: 1.06rem;}
+
+/* searchResultSection - searchSortW */
+.searchResultSection .searchSortW{margin-bottom: 12px;}
+.searchResultSection .searchSortW::after{content: ""; display: block; clear: both;}
+.searchResultSection .searchSortW .searchSum{display: block; font-size: 1rem; color: #747474; float: left; line-height: 20px;}
+.searchResultSection .searchSortW .searchSum .searchCount{color: #000000;}
+.searchResultSection .searchSortW .searchSort{display: -webkit-box; display: -ms-flexbox; display: flex; float: right;}
+.searchResultSection .searchSortW .searchSort li{margin-right: 12px;}
+.searchResultSection .searchSortW .searchSort li:last-child{margin-right: 0px;}
+.searchResultSection .searchSortW .searchSort li a{display: block; font-size: 0.87rem; color: #4f4f4f; line-height: 20px;}
+.searchResultSection .searchSortW .searchSort li a img{width: 16px; vertical-align: middle; margin-right: 4px;}
+.searchResultSection .searchSortW .searchSort .listType{display: none; margin-right: 0;}
+.searchResultSection .searchSortW .searchSort .listType.active{display: block;}
+@media screen and (max-width:640px) {
+    .searchResultSection{padding: 20px 0;}
+    .searchResultSection .searchTitle{margin-bottom: 16px;}
+    .searchResultSection .searchSumW{margin-bottom: 12px;}
+}
+
+
+/* searchVideoSwiper */
+
+
+/* searchVideoList list */
+.searchVideoList.list{overflow: visible;}
+.searchVideoList.list li{margin-bottom: 30px;}
+.searchVideoList.list li a{display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%;}
+.searchVideoList.list .videoCover{margin-right: 16px;}
+.searchVideoList.list .videoInfo{display: block; width: 100%; overflow: hidden;}
+@media screen and (max-width:640px) {
+    .searchVideoList.list li{margin-bottom: 20px;}
+    .searchVideoList.list .videoCover{width: 156px; margin-right: 12px;}
+}
+@media screen and (max-width:400px) {
+    .searchVideoList.list .videoCover{width: 120px; height: 84px; margin-right: 8px;}
+}
+
+
+/* searchVideoList grid */
+.searchVideoList.grid{overflow: visible;}
+.searchVideoList.grid ul{display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-lines: multiple; -ms-flex-wrap: wrap; flex-wrap: wrap;}
+.searchVideoList.grid li{margin-bottom: 30px; width: calc(25% - 20px); margin-right: calc(4 * 20px / 3);}
+.searchVideoList.grid li:nth-child(4n){margin-right: 0px;}
+.searchVideoList.grid .videoCover{width: auto; margin-bottom: 16px; margin-right: 0;}
+.searchVideoList.grid .videoInfo{display: block; width: 100%; overflow: hidden;}
+@media screen and (max-width:780px) {
+    .searchVideoList.grid li{margin-bottom: 30px; width: calc(33% - 16px); margin-right: calc((3 * 16px)/2);}
+    .searchVideoList.grid li:nth-child(4n){margin-right: calc((3 * 16px)/2);}
+    .searchVideoList.grid li:nth-child(3n){margin-right: 0px;}
+    .searchVideoList.grid .videoCover{height: 100px;}
+    
+}
+@media screen and (max-width:520px) {
+    .searchVideoList.grid li{margin-bottom: 30px; width: calc(50% - 8px); margin-right: calc((2 * 8px));}
+    .searchVideoList.grid li:nth-child(3n){margin-right: calc((2 * 8px));}
+    .searchVideoList.grid li:nth-child(2n){margin-right: 0;}
+}
